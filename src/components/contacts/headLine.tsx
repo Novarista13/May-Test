@@ -19,7 +19,7 @@ export function HeadLine({ children }: { children: ReactNode }) {
             {contactHeadLineItems.map((item) => (
               <TabsTrigger
                 value={item.name}
-                className="relative text-xs rounded-none border-b-2 border-b-transparent bg-transparent px-4 font-semibold shadow-none transition-none focus-visible:ring-0 data-[state=active]:border-b-primary data-[state=active]:text-foreground data-[state=active]:shadow-none h-full items-center"
+                className="relative rounded-none border-b-2 text-xs border-b-transparent bg-transparent px-4 font-semibold shadow-none transition-none focus-visible:ring-0 data-[state=active]:border-b-sky-600 data-[state=active]:text-sky-600 data-[state=active]:shadow-none h-full items-center"
               >
                 <item.icon className="w-4 h-4 mr-2" />
                 {item.name}
@@ -36,7 +36,7 @@ export function HeadLine({ children }: { children: ReactNode }) {
               <Filter className="mr-2 h-4 w-4" />
               Filter
             </Button>
-            <Separator orientation="vertical" className="h-8"/>
+            <Separator orientation="vertical" className="h-8" />
             <Button className="w-fit h-8 text-xs py-1 bg-sky-700 hover:bg-sky-800">
               <Plus className="mr-2 h-4 w-4" /> Add Contact
             </Button>

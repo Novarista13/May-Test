@@ -16,7 +16,6 @@ const SidebarAccordion = ({
   item: categoryItems;
   isOpen: boolean;
 }) => {
-  console.log(item);
 
   return !isOpen ? null : (
     <Accordion
