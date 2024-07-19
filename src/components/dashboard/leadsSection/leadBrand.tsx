@@ -1,6 +1,3 @@
-import { Target } from "lucide-react";
-import React from "react";
-
 const LeadBrand = () => {
   return (
     <div className="flex flex-col text-center mr-4 mt-8 mb-2 gap-y-2">

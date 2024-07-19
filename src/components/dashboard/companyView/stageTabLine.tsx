@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
-import DealStage from "./stage/dealStage";
 import { Tabs, TabsContent } from "@/components/ui/tabs";
 import { stageTabItems } from "@/lib/dashboardTabLists";
+import { useState } from "react";
+import DealStage from "./stage/dealStage";
 
 const StageTabLine = () => {
   const [currentStage, setCurrentStage] = useState(stageTabItems[0].name);

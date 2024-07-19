@@ -1,7 +1,6 @@
-import React from "react";
-import CategorySidebar from "./sidebar/sidebar";
 import { TabsContent } from "@/components/ui/tabs";
 import { categorySidebarItems } from "@/lib/dashboardTabLists";
+import CategorySidebar from "./sidebar/sidebar";
 
 const Categories = () => {
   return (

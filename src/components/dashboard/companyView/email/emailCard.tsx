@@ -1,11 +1,10 @@
-import { Card } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { format } from "date-fns";
-import React from "react";
-import { mailType } from "../../../../../types";
 import { CornerUpLeftIcon, CornerUpRightIcon, Trash2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { mailType } from "../../../../../types";
 
 const EmailCard = ({ mail }: { mail: mailType }) => {
   return (

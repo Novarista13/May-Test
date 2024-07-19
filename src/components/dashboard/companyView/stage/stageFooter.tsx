@@ -1,4 +1,4 @@
-import React from "react";
+import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
@@ -7,9 +7,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Plus } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { stageTabItems } from "@/lib/dashboardTabLists";
+import { Plus } from "lucide-react";
+import React from "react";
 
 const StageFooter = ({
   currentStage,

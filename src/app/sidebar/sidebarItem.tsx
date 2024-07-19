@@ -1,11 +1,9 @@
-import React from "react";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Home } from "lucide-react";
 import Link from "next/link";
 import { sidebarItem } from "../../../types";
 

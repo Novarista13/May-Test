@@ -1,13 +1,13 @@
 "use client";
 
-import SidebarItem from "./sidebarItem";
-import SidebarToggle from "./sidebarToggle";
-import { useCategorySidebarToggle } from "@/hooks/useSidebarToggle";
 import { Tabs, TabsList } from "@/components/ui/tabs";
+import { useCategorySidebarToggle } from "@/hooks/useSidebarToggle";
+import { categorySidebarItems } from "@/lib/dashboardTabLists";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 import SidebarAccordion from "./sidebarAccordion";
-import { categorySidebarItems } from "@/lib/dashboardTabLists";
+import SidebarItem from "./sidebarItem";
+import SidebarToggle from "./sidebarToggle";
 
 export default function CategorySidebar({ children }: { children: ReactNode }) {
   const sidebar = useCategorySidebarToggle();

@@ -1,7 +1,6 @@
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { ChevronDown, Mail, Phone } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
-import React from "react";
 import { leadType } from "../../../../types";
 
 const LeadsDescription = ({ lead }: { lead: leadType }) => {

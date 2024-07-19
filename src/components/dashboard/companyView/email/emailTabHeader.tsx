@@ -1,7 +1,6 @@
-import React from "react";
 import { Badge } from "@/components/ui/badge";
-import { CalendarClock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CalendarClock } from "lucide-react";
 
 const EmailTabHeader = () => {
   return (

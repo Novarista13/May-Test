@@ -1,7 +1,6 @@
 import { HeadLine } from "@/components/contacts/headLine";
 import { TabsContent } from "@/components/ui/tabs";
 import { contactHeadLineItems } from "@/lib/contactTabLists";
-import React from "react";
 
 const contacts = () => {
   return (

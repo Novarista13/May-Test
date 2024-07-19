@@ -1,7 +1,6 @@
-import React from "react";
-import { ContactListHeadLine } from "./contactListHeadLine";
 import { contactListHeadLineItems } from "@/lib/contactTabLists";
 import { TabsContent } from "@radix-ui/react-tabs";
+import { ContactListHeadLine } from "./contactListHeadLine";
 
 const List = () => {
   return (

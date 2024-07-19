@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import { categoryItems } from "../../../../../types";
 import {
   Accordion,
   AccordionContent,
@@ -9,6 +7,7 @@ import {
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { TabsTrigger } from "@radix-ui/react-tabs";
+import { categoryItems } from "../../../../../types";
 
 const SidebarAccordion = ({
   item,

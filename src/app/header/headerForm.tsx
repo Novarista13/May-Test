@@ -1,6 +1,5 @@
-import React from "react";
-import { Command, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import { Command, Search } from "lucide-react";
 
 const HeaderForm = () => {
   return (

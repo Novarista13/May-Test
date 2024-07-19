@@ -1,6 +1,5 @@
-import React from "react";
-import HeaderRightItems from "./headerRightItems";
 import HeaderForm from "./headerForm";
+import HeaderRightItems from "./headerRightItems";
 
 const Header = () => {
   return (

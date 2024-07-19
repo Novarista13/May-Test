@@ -1,6 +1,5 @@
-import React from "react";
-import EmailCard from "./emailCard";
 import { mails } from "@/lib/mails";
+import EmailCard from "./emailCard";
 import EmailTabHeader from "./emailTabHeader";
 
 const EmailTab = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import StageBreadcrumb from "./stageBreadcrumb";
-import StageHeader from "./stageHeader";
 import StageFooter from "./stageFooter";
+import StageHeader from "./stageHeader";
 
 const DealStage = ({
   currentStage,

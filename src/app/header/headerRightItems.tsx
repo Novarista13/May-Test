@@ -1,6 +1,5 @@
-import React from "react";
-import UserDropDown from "./userDropDown";
 import { Bell, CircleHelp } from "lucide-react";
+import UserDropDown from "./userDropDown";
 
 const HeaderRightItems = () => {
   return (

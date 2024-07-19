@@ -1,5 +1,4 @@
 import { TabsTrigger } from "@/components/ui/tabs";
-import React from "react";
 import { stageTab } from "../../../../../types";
 
 const StageTabTrigger = ({ item }: { item: stageTab }) => {

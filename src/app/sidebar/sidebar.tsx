@@ -1,11 +1,11 @@
 "use client";
 
-import { sidebarItems } from "@/lib/sidebarList";
-import SidebarItem from "./sidebarItem";
-import SidebarToggle from "./sidebarToggle";
 import { useSidebarToggle } from "@/hooks/useSidebarToggle";
+import { sidebarItems } from "@/lib/sidebarList";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
+import SidebarItem from "./sidebarItem";
+import SidebarToggle from "./sidebarToggle";
 
 export function Sidebar({ children }: { children: ReactNode }) {
   const sidebar = useSidebarToggle();

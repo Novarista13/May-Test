@@ -1,6 +1,5 @@
 import { TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { stageTabItems } from "@/lib/dashboardTabLists";
-import React from "react";
 
 const StageBreadcrumb = () => {
   return (

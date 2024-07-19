@@ -1,4 +1,3 @@
-import React from "react";
 import StageTabLine from "./stageTabLine";
 
 const Companyview = () => {
