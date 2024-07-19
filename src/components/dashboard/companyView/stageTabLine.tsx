@@ -19,7 +19,7 @@ const StageTabLine = () => {
       />
       {stageTabItems.map((item) => (
         <TabsContent key={item.name} className="w-full" value={item.name}>
-          {item.component ? item.component : "hi"}
+          {item.component ? item.component : "no content"}
         </TabsContent>
       ))}
     </Tabs>

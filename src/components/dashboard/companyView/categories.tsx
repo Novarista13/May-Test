@@ -15,12 +15,12 @@ const Categories = () => {
                   className="w-full"
                   value={child.name}
                 >
-                  {child.component ? child.component : "hi"}
+                  {child.component ? child.component : "no content"}
                 </TabsContent>
               ))
             ) : (
               <TabsContent key={item.name} className="w-full" value={item.name}>
-                {item.component ? item.component : "hi"}
+                {item.component ? item.component : "no content"}
               </TabsContent>
             )
           )}

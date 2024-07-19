@@ -13,7 +13,7 @@ export default function Home() {
         <div className="col-span-3 col-start-2 ">
           {dashboardHeadLineItems.map((item) => (
             <TabsContent key={item.name} className="w-full" value={item.name}>
-              {item.component ? item.component : "hi"}
+              {item.component ? item.component : "no content"}
             </TabsContent>
           ))}
         </div>

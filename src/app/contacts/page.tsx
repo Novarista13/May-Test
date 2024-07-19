@@ -7,7 +7,7 @@ const contacts = () => {
     <HeadLine>
       {contactHeadLineItems.map((item) => (
         <TabsContent key={item.name} className="w-full mt-0" value={item.name}>
-          {item.component ? item.component : "hi"}
+          {item.component ? item.component : "no content"}
         </TabsContent>
       ))}
     </HeadLine>

@@ -7,15 +7,11 @@ import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 
 import { Button } from "@/components/ui/button";
-import {
-  Mail,
-  MailOpen,
-  MapPin,
-  Phone
-} from "lucide-react";
+import { Mail, MailOpen, MapPin, Phone } from "lucide-react";
 import { contactType } from "../../../../../types";
 import { DataTableColumnHeader } from "./dataTableColumnHeader";
 import { DataTableRowActions } from "./dataTableRowActions";
+import Link from "next/link";
 
 export const columns: ColumnDef<contactType>[] = [
   {
@@ -64,7 +60,9 @@ export const columns: ColumnDef<contactType>[] = [
     cell: ({ row }) => (
       <div className="w-max text-xs">
         <Mail className="mr-2 h-4 w-4 inline text-muted-foreground" />
-        <span className="underline">{row.getValue("email")}</span>
+        <Link href="#" className="underline">
+          {row.getValue("email")}
+        </Link>
       </div>
     ),
     enableSorting: true,

@@ -7,7 +7,7 @@ const LeadsDescription = ({ lead }: { lead: leadType }) => {
   return (
     <div className="flex flex-col ml-5 gap-y-1">
       {lead.role && (
-        <div className="text-[13px] font-bold text-muted-foreground flex items-center h-7 pl-1">
+        <div className="text-[13px] font-bold text-muted-foreground flex items-center h-7">
           {lead.role}
         </div>
       )}
@@ -31,7 +31,7 @@ const LeadsDescription = ({ lead }: { lead: leadType }) => {
       )}
       <div className="text-xs flex flex-row items-center gap-x-3 pl-1">
         <Mail className="w-4 h-4 text-muted-foreground" />
-        <Link href="/" className="underline w-fit text-black p-0">
+        <Link href="#" className="underline w-fit text-black p-0">
           {lead.email}
         </Link>
       </div>
