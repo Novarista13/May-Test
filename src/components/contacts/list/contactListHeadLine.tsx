@@ -17,6 +17,7 @@ export function ContactListHeadLine({ children }: { children: ReactNode }) {
             {contactListHeadLineItems.map((item) => (
               <TabsTrigger
                 value={item.name}
+                key={item.name}
                 className="rounded-full text-xs py-2 px-4 data-[state=active]:bg-[#efefef]"
               >
                 {item.name}

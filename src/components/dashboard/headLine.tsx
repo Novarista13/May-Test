@@ -17,6 +17,7 @@ export function HeadLine({ children }: { children: ReactNode }) {
               {dashboardHeadLineItems.map((item) => (
                 <TabsTrigger
                   value={item.name}
+                  key={item.name}
                   className="relative rounded-none border-b-2 text-xs border-b-transparent bg-transparent px-4 font-semibold shadow-none transition-none focus-visible:ring-0 data-[state=active]:border-b-sky-600 data-[state=active]:text-sky-600 data-[state=active]:shadow-none h-full items-center"
                 >
                   <item.icon className="w-4 h-4 mr-2" />
