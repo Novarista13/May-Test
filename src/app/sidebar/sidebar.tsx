@@ -7,7 +7,7 @@ import { ReactNode } from "react";
 import SidebarItem from "./sidebarItem";
 import SidebarToggle from "./sidebarToggle";
 
-export function Sidebar({ children }: { children: ReactNode }) {
+export default function Sidebar({ children }: { children: ReactNode }) {
   const sidebar = useSidebarToggle();
 
   return (

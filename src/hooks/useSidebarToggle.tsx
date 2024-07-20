@@ -1,13 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const useSidebarToggle = () => {
+  "use client";
   const [isOpen, setIsOpen] = useState<boolean>(true);
 
   return {
-    status: localStorage.getItem("sidebar") === "true",
+    status:
+      typeof window !== "undefined"
+        ? localStorage.getItem("sidebar") === "true"
+        : isOpen,
     setStatus: () => {
       setIsOpen(!isOpen);
-      localStorage.setItem("sidebar", `${!isOpen}`);
+      typeof window !== "undefined" &&
+        localStorage.setItem("sidebar", `${!isOpen}`);
     },
   };
 };
@@ -16,12 +21,14 @@ export const useCategorySidebarToggle = () => {
   const [isOpen, setIsOpen] = useState<boolean>(true);
 
   return {
-    status: localStorage.getItem("category-sidebar") === "true",
+    status:
+      typeof window !== "undefined"
+        ? localStorage.getItem("category-sidebar") === "true"
+        : isOpen,
     setStatus: () => {
       setIsOpen(!isOpen);
-      localStorage.setItem("category-sidebar", `${!isOpen}`);
+      typeof window !== "undefined" &&
+        localStorage.setItem("category-sidebar", `${!isOpen}`);
     },
   };
 };
-
-

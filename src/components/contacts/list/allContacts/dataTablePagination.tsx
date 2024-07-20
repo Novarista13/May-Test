@@ -4,7 +4,7 @@ import {
   Pagination,
   PaginationContent,
   PaginationEllipsis,
-  PaginationItem
+  PaginationItem,
 } from "@/components/ui/pagination";
 import {
   Select,
@@ -60,7 +60,7 @@ export function DataTablePagination<TData>({
                   <ChevronLeft className="h-4 w-4" />
                 </Button>
               </PaginationItem>
-              <PaginationItem >
+              <PaginationItem>
                 <Button
                   variant="outline"
                   className={`hidden h-8 w-8 p-0 lg:flex ${
@@ -81,22 +81,24 @@ export function DataTablePagination<TData>({
                 </PaginationItem>
               )}
 
-              <PaginationItem>
-                <Button
-                  variant="outline"
-                  className={`hidden h-8 w-8 p-0 lg:flex ${
-                    table.getState().pagination.pageIndex ===
-                    table.getPageCount() - 1
-                      ? "bg-black text-white"
-                      : ""
-                  }`}
-                  onClick={() => table.setPageIndex(table.getPageCount() - 1)}
-                  disabled={!table.getCanNextPage()}
-                >
-                  {table.getPageCount()}
-                  <span className="sr-only">Go to last page</span>
-                </Button>
-              </PaginationItem>
+              {table.getPageCount() > 1 && (
+                <PaginationItem>
+                  <Button
+                    variant="outline"
+                    className={`hidden h-8 w-8 p-0 lg:flex ${
+                      table.getState().pagination.pageIndex ===
+                      table.getPageCount() - 1
+                        ? "bg-black text-white"
+                        : ""
+                    }`}
+                    onClick={() => table.setPageIndex(table.getPageCount() - 1)}
+                    disabled={!table.getCanNextPage()}
+                  >
+                    {table.getPageCount()}
+                    <span className="sr-only">Go to last page</span>
+                  </Button>
+                </PaginationItem>
+              )}
 
               <PaginationItem>
                 <Button

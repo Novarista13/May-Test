@@ -1,7 +1,11 @@
-import { Handshake, LayoutDashboard, Lightbulb, Users, Users2 } from "lucide-react";
 import {
-  sidebarItem,
-} from "../../types";
+  CircleUser,
+  Handshake,
+  LayoutDashboard,
+  Lightbulb,
+  Users,
+} from "lucide-react";
+import { sidebarItem } from "../../types";
 
 export const sidebarItems: sidebarItem[] = [
   {
@@ -12,7 +16,7 @@ export const sidebarItems: sidebarItem[] = [
   {
     name: "Contacts",
     href: "/contacts",
-    icon: Users2,
+    icon: CircleUser,
   },
   {
     name: "Leads",
@@ -30,4 +34,3 @@ export const sidebarItems: sidebarItem[] = [
     icon: Handshake,
   },
 ];
-

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./header/Header";
-import { Sidebar } from "./sidebar/sidebar";
+import dynamic from "next/dynamic";
+
+const Sidebar = dynamic(() => import("./sidebar/sidebar"), { ssr: false });
 
 const inter = Inter({ subsets: ["latin"] });
 

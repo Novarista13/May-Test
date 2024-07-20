@@ -9,7 +9,7 @@ const StageBreadcrumb = () => {
           <TabsTrigger
             value={item.name}
             key={item.name}
-            className=" data-[state=active]:before:bg-sky-100 text-[13px] data-[state=active]:after:bg-sky-100 px-2.5 "
+            className=" data-[state=active]:before:bg-sky-100 text-[13px] data-[state=active]:after:bg-sky-100 px-2.5 data-[state=active]:first:bg-sky-100 data-[state=active]:last:bg-sky-100 text-black data-[state=active]:text-sky-600"
           >
             <span> {item.name}</span>
           </TabsTrigger>
